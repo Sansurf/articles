@@ -8,15 +8,11 @@ $content - содержание
 <a href="index.php">Главная</a> |
 
 <hr/>
-<b><?=$article['title'];?></b><br />
-<p><?php echo str_replace("\n", "<br />", $article['content'])?></p>
+<b><?=$article["title"]?></b><br />
+<p><?=str_replace("\n", "<br />", $article['content'])?></p>
 
+<b>Оставить отзыв:</b>
 <br />
-<b>Комментарии:</b>
-
-<br /><br />
-<b>Оставить комментарий:</b>
-<br /><br />
 <form method="post">
 	Ваше имя:
 	<input type="text" name="name">

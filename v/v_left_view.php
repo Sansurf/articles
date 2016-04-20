@@ -2,7 +2,7 @@
 <ul>
 <?php foreach ($articles as $article):?>
     <li>
-        <a href="index.php?id=<?=$article['id_article']?>&act=article&c=C_Page">
+        <a href="index.php?id=<?=$article['id_article']?>&l=view&act=article&c=C_Page">
             <?=$article['title'];?>
         </a><br /><br />
     </li>

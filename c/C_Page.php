@@ -24,9 +24,9 @@ class C_Page extends C_Base
 	// Получение одной статьи
 	public function action_article()
 	{
-		if($this->isGet())
+		if($this->IsGet())
 		{
-			$article = $this->articles_get($_GET['id']);
+			$article = $this->article_get($_GET['id']);
 			$this->title .= "::" .$article['title'];
 			$this->h1 .= "::" .$article['title'];
 			$this->content = $this->Template('v/v_article.php', array('article'=>$article));

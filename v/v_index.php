@@ -23,7 +23,7 @@ content - текст*/
 	            echo implode(" ", $arr). "...";
             ?>
             <br />
-            <i><a href="index.php?id=<?=$article['id_article']?>&act=article&c=C_Page">
+            <i><a href="index.php?id=<?=$article['id_article']?>&l=view&act=article&c=C_Page">
             	Читать далее...</a></i>
             <br /><br />
         </li>
